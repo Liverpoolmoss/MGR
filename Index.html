@@ -1,0 +1,205 @@
+<html>
+<head>
+    <title>MGR Industrial - (47) 3028-3501</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style>
+
+        html,body{
+            background-color: #fcfcfc;
+            color: #143250;
+            width:100%;
+            heigth:100%;
+            margin:0;
+        }
+        body{
+            font-family: sans-serif;
+        }
+
+        .fab{
+            position: fixed;
+            bottom:10px;
+            right:10px;
+        }
+
+        .fab button{
+            cursor: pointer;
+            width: 48px;
+            height: 48px;
+            border-radius: 30px;
+            background-color: #e7dfe5;
+            border: none;
+            box-shadow: 0 1px 5px rgba(0,0,0,.4);
+            font-size: 24px;
+            color: white;
+
+
+        }
+
+        .fab button:focus{
+            outline: none;
+        }
+
+        .fab button.main{
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: #123e5f;
+            right: 0;
+            bottom: 0;
+            z-index: 20;
+        }
+
+        .fab button.main:before{
+            content: '↓';
+        }
+
+        .fab ul{
+            position:absolute;
+            bottom: 0;
+            right: 0;
+            padding:0;
+            padding-right:5px;
+            margin:0;
+            list-style:none;
+            z-index:10;
+
+            -webkit-transition: .2s ease-out;
+            -moz-transition: .2s ease-out;
+            transition: .2s ease-out;
+        }
+
+        .fab ul li{
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            margin-bottom: -10%;
+            opacity: 0;
+
+            -webkit-transition: .3s ease-out;
+            -moz-transition: .3s ease-out;
+            transition: .3s ease-out;
+        }
+
+        .fab ul li label{
+            margin-right:10px;
+            white-space: nowrap;
+            display: block;
+            margin-top: 10px;
+            padding: 5px 8px;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,.2);
+            border-radius:3px;
+            height: 18px;
+            font-size: 16px;
+            pointer-events: none;
+            opacity:0;
+
+            -webkit-transition: .2s ease-out;
+            -moz-transition: .2s ease-out;
+            transition: .2s ease-out;
+        }
+
+        .fab button.main:active,
+        .fab button.main:focus{
+            outline: none;
+            background-color: #0c425c;
+            box-shadow: 0 3px 8px rgba(0,0,0,.5);
+        }
+
+        .fab button.main:active:before,
+        .fab button.main:focus:before{
+            content: '↑';
+        }
+
+        .fab button.main:active + ul,
+        .fab button.main:focus + ul{
+            bottom: 70px;
+        }
+
+        .fab button.main:active + ul li,
+        .fab button.main:focus + ul li{
+            margin-bottom: 10px;
+            opacity: 1;
+        }
+
+        .fab button.main:active + ul li:hover label,
+        .fab button.main:focus + ul li:hover label{
+            opacity: 1;
+        }
+        img#logo{
+            padding-top: 4%;
+            padding-left: 35%;
+            align-self: center;
+            float: top;
+            position: relative;
+
+        }
+        .content{
+            font-family:helvetica;
+            letter-spacing:2px;
+            padding-left: 300px;
+            color: #1d306c;
+            font-size: 23px;
+            padding-top: 110px;
+            float: bottom;
+            align-self: center;
+            position: relative;
+        }
+        .th{
+            text-align: center;
+        }
+        #email{
+            margin-bottom: 1%;
+        }
+        a {
+            letter-spacing:0px;
+            font-size: 20px;
+            color: #073c6a;
+        }
+        img#loading {
+            padding-left: 35%;
+            padding-bottom:0%;
+            align-self: center;
+            float: top;
+            position: relative;
+        }
+        #email{
+           margin-right: 2%;
+        }
+        #telefone{
+            margin-left: 2%;
+
+        }
+    </style>
+</head>
+<body bgcolor="#101354">
+<div class ='td'>
+    <img id="logo" name="logo" src="https://lh3.googleusercontent.com/Ma7f9JyI1PIPk5Szw5K23ARF8X40NwWfTntrNdbfoCUiYefXgrvfAxStxzzCD_4rJ6peZMqO6_-H-KaL=w960-h960-n-o-v1" width="30%" height="50%" border="0" alt="MGR Industrial - (47) 98819-9572">
+    <a class= "content">
+        <h3 align="middle"> Site em Construção, Novidades em Breve! </h3>
+        <img id="loading" name="carregamento" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAi8AAABaCAMAAABHekYtAAAAyVBMVEX///9qrvEAAACAgIBssfUIDRLn5+dvtftSiLxJSUmtra3s7Ow+Pj5YWFi+vr44XIBfqfDc7PwxMTHKysrz8/OioqIRERHa2togICBOTk7ExMS3t7eNjY3p6en39/eYmJhiYmIjNEQuTWs+ZYxKeagoQlwtOkZvb28kHA93iZtwoNF8ufWs0vpBQUFzeX+cyPS62fmHlKCSw/YjIyOLuOVZa37x9/5mkr3F3/kVIS5gnNcSGR9imM4NCABhhajW6PuTrcajvtp7ruGyYxVbAAACx0lEQVR4nO3cDVPaMBzH8fIwZik4VsqTUEDFMQbqhnMP7nnv/0VNSXFsJ1z/bUNy5fs57zwvzVGSn00CbRwHAAAAAAAAAAAAAAAAAAAAAADk3DDwwkpYefpH/dpWHu4q//fvcFfhf+VPvdhG+baTDXcVbn0PMcs1Fe73ZUPPG6ZMizca17pFHIa2Xx80U6Sl2TP9DrB37WqQLC2VkulThxFuomtMxzV93jCkW00QF9MnDYNa0riEj1eX7unZ+eQImZmcX7xye66FNpY20iFpGtV7PXtTRtbmiw/Sf+B9CDr9y6jffU9U8ziqdnVdLheQuUbhraY+T2vd8yVRrbqq9G5pumHza6Gpw9Nq+quuv+kI6kST3Sviok/D1sD05VPelhrD3ptu03yzdUhSn7v14lcYqtnuLVMXreZWTnrvRyS1Lq7ErhCspi/tj+RFr08aOz0FTy2r409gvNWq6vMdedFrqbHT07gUfgTj1R6OvzDdnLln64CkVscnsY9XeTkz3Zz5Z3VejmMfr/LyguFIs8ZLjZ2eAnmxE3mBBHmBBHmBBHmBBHmBBHmBBHmBBHmBBHmBSK7ywvdHupVz9f3R6Z3p9sy7paV56Qm/nw5WFb58ZUDSy9I7eIe+8P6XYPxw/Lfv5EWvHxo7PYVKUXh/XXTHb31uukHz7Vpfl6cS3e0v2KYhemjpJxcYjeaWro489Sj0VFKlrR4pWDRMN2p+NSwdjZyBulj0E9Sp/+IKo4mtV5dhtOuPK9qarKKmyEV/9rvAE9RZs/aBeyc4GRcTXF7Wc557tdvJXaH8HJkpF44ms6qNWoPHDeim0p0PR8UNz5Chov1cYVqc9Zoah8iN/yzsXwPTZw1D6mGCuLCd6oHyxZvXrQXV8Y3ps8dedXujJGPR2rDTHw1KOBCDaifhZs0AAAAAAAAAAAAAAAAAAAAAAAAA4Dh/AENNuHBORCxhAAAAAElFTkSuQmCC" width="30%" height="10%" border="0" alt="MGR Industrial - (47) 98819-9572">
+
+    </a>
+    <div class="fab">
+        <button class="main"><a href="#informacoes"></a>
+        </button>
+    </div>
+</div>
+<div class ='th'>
+
+    <h4 class= informacoes>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<h5>
+                <a href="mailto:contato@mgrcomercio.com" style = "text-decoration: none" id="email"> contato@mgrcomercio.com</a>&nbsp;
+                 <a class="fa fa-phone" id="telefone">(47) 3028-3501 </a>
+            </h5>
+    </h4>
+</div>
+
+</body>
+
+
+</html>
